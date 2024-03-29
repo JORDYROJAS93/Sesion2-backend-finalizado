@@ -1,5 +1,6 @@
 package com.empresa.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -11,15 +12,12 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-@Table(name = "medicamento")
+@Table(name = "deporte")
 
+public class Deporte {
 
-public class Medicamento {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int idMedicamento;
+	private int idDeporte;
 	private String nombre;
-	private double precio;
-	private int stock;
-	private String laboratorio;
 }
